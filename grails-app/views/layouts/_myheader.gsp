@@ -15,19 +15,13 @@
 						class="navbar-form navbar-right" role="form">
 						<div class="form-group">
 							<input type="text" name="login" placeholder="Login"
-								class="form-control">
+								class="form-control input-sm">
 						</div>
 						<div class="form-group">
 							<input type="password" name="senha" placeholder="Senha"
-								class="form-control">
+								class="form-control input-sm">
 						</div>
-						<g:if test="${session.usuario }">
-							<button type="submit" class="btn btn-primary" disabled>Sign
-								in</button>
-						</g:if>
-						<g:else>
-							<button type="submit" class="btn btn-primary">Sign in</button>
-						</g:else>
+						<button type="submit" class="btn btn-primary btn-sm" >Entrar</button>
 					</form>
 				</div>
 				<!--/.navbar-collapse -->
@@ -55,7 +49,6 @@
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown">Dropdown <b class="caret"></b></a>
