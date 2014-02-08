@@ -60,6 +60,7 @@ grails.project.dependency.resolution = {
 
         build ":tomcat:$grailsVersion"
 
+		//removido da lista de plugins padrão
         //runtime ":database-migration:1.3.2"
 
         compile ':cache:1.0.1'
