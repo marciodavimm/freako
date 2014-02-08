@@ -30,9 +30,10 @@ environments {
     }
     production {
         dataSource {
+			driverClassName = "org.h2.Driver"
             dbCreate = "update"
-            //url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-			url = "jdbc:postgresql://localhost:5432/freako"
+            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+			//url = "jdbc:postgresql://localhost:5432/freako"
             pooled = true
             properties {
                maxActive = -1

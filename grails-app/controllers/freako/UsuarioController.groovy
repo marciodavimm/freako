@@ -17,6 +17,7 @@ class UsuarioController {
 		redirect(view:"extras/hello.gsp")
 	}
 	
+	/*
 	def login = {
 		def loginUsuario = params["login"]
 		def senhaUsuario = params.senha
@@ -33,6 +34,7 @@ class UsuarioController {
 		}
 		
 	}
+	*/
 
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
